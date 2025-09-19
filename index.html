@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presentes - Casa Nova</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .gift-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gift-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fafafa;
+            text-align: center;
+            position: relative;
+        }
+        .gift-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .gift-item h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+        .gift-item .price {
+            margin: 5px 0 10px;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .buy-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .buy-button:hover {
+            background-color: #c0392b;
+        }
+        .close-button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        @media (max-width: 900px) {
+            .gift-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .gift-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Presentes - Casa Nova</h1>
+        <p style="text-align: center;">Escolha um presente para nossa nova casa! Clique no botão para comprar.</p>
+        <div class="gift-list">
+            <div class="gift-item">
+                <img src="imagens/tapete.png" alt="Almoço no restaurante Quinzi & Gabrieli">
+                <h3>TAPETE DE PEDRA</h3>
+                <div class="price">R$ 230.30</div>
+                <a href="https://www.example.com/almoco-quinzi-gabrieli" target="_blank" class="buy-button">Comprar</a>
+            </div>
+            <div class="gift-item">
+                <img src="https://via.placeholder.com/200?text=Almoço+no+restaurante+Trattoria+Da+Gemma" alt="Almoço no restaurante Trattoria Da Gemma">
+                <h3>Almoço no restaurante Trattoria Da Gemma</h3>
+                <div class="price">R$ 300.00</div>
+                <a href="https://www.example.com/almoco-trattoria-da-gemma" target="_blank" class="buy-button">Comprar</a>
+            </div>
+            <div class="gift-item">
+                <img src="https://via.placeholder.com/200?text=Apple+TV" alt="Apple TV">
+                <h3>Apple TV</h3>
+                <div class="price">R$ 600.00</div>
+                <a href="https://www.example.com/apple-tv" target="_blank" class="buy-button">Comprar</a>
+            </div>
+            <div class="gift-item">
+                <img src="https://via.placeholder.com/200?text=Baixela+24+peças+modelo+Crystal+Chess" alt="Baixela 24 peças modelo Crystal Chess">
+                <h3>Baixela 24 peças modelo Crystal Chess</h3>
+                <div class="price">R$ 700.00</div>
+                <a href="https://www.example.com/baixela-crystal-chess" target="_blank" class="buy-button">Comprar</a>
+            </div>
+            <div class="gift-item">
+                <button class="close-button">X</button>
+                <img src="https://via.placeholder.com/200?text=Balde+térmico+para+gelo+em+prata" alt="Balde térmico para gelo em prata">
+                <h3>Balde térmico para gelo em prata</h3>
+                <div class="price">R$ 795.00</div>
+                <a href="https://www.example.com/balde-termico-prata" target="_blank" class="buy-button">Comprar</a>
+            </div>
+            <div class="gift-item">
+                <button class="close-button">X</button>
+                <img src="https://via.placeholder.com/200?text=Bandeja+Império+Demolho" alt="Bandeja Império Demolho">
+                <h3>Bandeja Império Demolho</h3>
+                <div class="price">R$ 310.00</div>
+                <a href="https://www.example.com/bandeja-imperio-demolho" target="_blank" class="buy-button">Comprar</a>
+            </div>
+            <div class="gift-item">
+                <button class="close-button">X</button>
+                <img src="https://via.placeholder.com/200?text=Bomboniere+Infinity+em+cristal+Bohemia" alt="Bomboniere Infinity em cristal Bohemia">
+                <h3>Bomboniere Infinity em cristal Bohemia</h3>
+                <div class="price">R$ 140.00</div>
+                <a href="https://www.example.com/bomboniere-infinity" target="_blank" class="buy-button">Comprar</a>
+            </div>
+            <div class="gift-item">
+                <button class="close-button">X</button>
+                <img src="https://via.placeholder.com/200?text=Bowl+grande+Pearl+em+prata" alt="Bowl grande Pearl em prata">
+                <h3>Bowl grande Pearl em prata</h3>
+                <div class="price">R$ 400.00</div>
+                <a href="https://www.example.com/bowl-grande-pearl" target="_blank" class="buy-button">Comprar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
